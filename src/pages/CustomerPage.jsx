@@ -48,7 +48,7 @@ export default function CustomerPage() {
       // Persist real Faraday results to the shoppers list (require at least 4 of 5 fields)
       const faradayFields = ['vehicle_1_style', 'vehicle_purchaser_likelihood', 'new_luxury_vehicle_purchaser_likelihood', 'electric_vehicle_purchase_likelihood', 'vehicle_performance_upgrade_likelihood'];
       const fieldsReturned = faradayFields.filter(f => enrichmentData[f] != null).length;
-      if (result.source !== 'shopper' && result.source !== 'override' && formData.firstName && fieldsReturned >= 4 && enrichmentData.vehicle_1_style != null) {
+      if (import.meta.env.DEV && result.source !== 'shopper' && result.source !== 'override' && formData.firstName && fieldsReturned >= 4 && enrichmentData.vehicle_1_style != null) {
         const shopper = {
           id: `${formData.firstName}-${formData.lastName}-${Date.now()}`.toLowerCase().replace(/\s+/g, '-'),
           firstName: formData.firstName,
