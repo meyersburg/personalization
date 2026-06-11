@@ -174,7 +174,7 @@ export default function LeadForm({ onSubmit, onClose }) {
               {fecLoading ? 'Loading random shopper…' : '🎲 Use a random shopper'}
             </button>
             {fecUsed && (
-              <p className="text-xs text-gray-400 text-center">Celebs populated with FIG data</p>
+              <p className="text-xs text-gray-400 text-center">Celeb info hidden, click Personalize</p>
             )}
             {fecError && <p className="text-xs text-red-500 text-center">{fecError}</p>}
           </div>
@@ -227,7 +227,7 @@ export default function LeadForm({ onSubmit, onClose }) {
           <button type="submit"
             disabled={overridesPartial}
             className="w-full bg-gray-900 hover:bg-gray-700 disabled:opacity-40 text-white font-semibold py-3.5 rounded-xl text-base transition-colors">
-            Personalize My Experience →
+            Personalize →
           </button>
         </form>
       </div>
