@@ -22,7 +22,7 @@ export default function PersonalizedHero() {
             Welcome, {firstName}
           </p>
         )}
-        <h1 className="text-white text-5xl font-bold leading-tight mb-4">
+        <h1 className="text-white text-5xl font-bold leading-tight mb-4 whitespace-pre-line">
           {creative.headline}
         </h1>
         <p className="text-white/80 text-lg mb-8">{creative.subhead}</p>

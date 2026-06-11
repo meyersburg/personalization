@@ -2,8 +2,8 @@ import { useApp } from '../context/AppContext';
 
 const PROPENSITIES = [
   { label: 'Luxury',      field: 'new_luxury_vehicle_purchaser_likelihood' },
-  { label: 'EV',          field: 'electric_vehicle_purchase_likelihood'    },
   { label: 'Performance', field: 'vehicle_performance_upgrade_likelihood'  },
+  { label: 'EV',          field: 'electric_vehicle_purchase_likelihood'    },
 ];
 
 function PropensityPill({ label, value }) {

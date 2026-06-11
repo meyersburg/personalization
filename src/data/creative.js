@@ -14,7 +14,7 @@ export const creativeAssets = [
     id: 'truck',
     image: truckHero,
     objectPosition: 'center 55%',
-    headline: 'Built for the Road Less Traveled',
+    headline: 'Built for the Road\nLess Traveled',
     subhead: 'Capability, toughness, and torque — ready for whatever comes next.',
   },
   {
@@ -42,7 +42,7 @@ export const creativeAssets = [
     id: 'sports',
     image: sportsHero,
     objectPosition: 'center 40%',
-    headline: 'Drive the Way You Feel',
+    headline: 'Feel Every Mile',
     subhead: 'Performance, precision, and pure driving pleasure.',
   },
   {
@@ -56,14 +56,14 @@ export const creativeAssets = [
     id: 'wagon',
     image: wagonHero,
     objectPosition: 'center 75%',
-    headline: 'Versatility Without Compromise',
+    headline: 'Space Meets Sport',
     subhead: 'The space you need with the style you want.',
   },
   {
     id: 'hatchback',
     image: hatchbackHero,
     objectPosition: 'center 60%',
-    headline: 'Compact. Connected. Capable.',
+    headline: 'Small Footprint\nBig Character',
     subhead: 'Big personality in a perfectly sized package.',
   },
   {
