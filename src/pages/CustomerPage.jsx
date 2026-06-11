@@ -9,7 +9,7 @@ import { derivePrefs, selectCreative, rankInventory, buildRationale } from '../s
 import VehicleCard from '../components/VehicleCard';
 import { inventory } from '../data/inventory';
 import defaultHero from '../assets/hero_images/default_hero.jpg';
-import logo1 from '../assets/icons/Monster.png';
+import logo1 from '../assets/Icons/Monster.png';
 
 const HERO_URL = defaultHero;
 const DEFAULT_VEHICLES = inventory.slice(0, 3).map(v => ({ ...v, score: 0 }));
