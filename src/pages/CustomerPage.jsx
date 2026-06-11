@@ -23,9 +23,7 @@ export default function CustomerPage() {
   async function handleSubmit(formData, shopperEnrichment = null, useOverrides = false) {
     setSubmitting(true);
     try {
-      const result = shopperEnrichment
-        ? { data: shopperEnrichment, source: 'shopper' }
-        : useOverrides
+      const result = useOverrides
         ? { data: {
               vehicle_purchaser_likelihood:           100,
               vehicle_1_style:                        formData.category,
@@ -33,6 +31,8 @@ export default function CustomerPage() {
               electric_vehicle_purchase_likelihood:   formData.electric    ? 100 : 0,
               vehicle_performance_upgrade_likelihood: formData.performance  ? 100 : 0,
             }, source: 'override' }
+        : shopperEnrichment
+        ? { data: shopperEnrichment, source: 'shopper' }
         : await enrichLead(formData);
       const enrichmentData = result.data;
 
