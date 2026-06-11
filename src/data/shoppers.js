@@ -13,6 +13,18 @@ export const shoppers = [
   },
   {"id":"bernard-sanders-1781198959311","firstName":"Bernard","lastName":"Sanders","enrichment":{"new_luxury_vehicle_purchaser_likelihood":23,"electric_vehicle_purchase_likelihood":41,"vehicle_performance_upgrade_likelihood":46,"vehicle_1_style":"Utility","vehicle_purchaser_likelihood":28}},
   {
+    id: 'martha-stewart',
+    firstName: 'Martha',
+    lastName: 'Stewart',
+    enrichment: {
+      vehicle_1_style: 'Sedan',
+      vehicle_purchaser_likelihood: 56,
+      new_luxury_vehicle_purchaser_likelihood: 91,
+      electric_vehicle_purchase_likelihood: 23,
+      vehicle_performance_upgrade_likelihood: 38,
+    },
+  },
+  {
     id: 'arnold-schwarzenegger',
     firstName: 'Arnold',
     lastName: 'Schwarzenegger',
