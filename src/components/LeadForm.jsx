@@ -87,9 +87,7 @@ export default function LeadForm({ onSubmit, onClose }) {
         <div className="p-6 border-b border-gray-100">
           <div className="flex items-center justify-between">
             <div>
-              <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-1">Chittenden Auto Group</p>
-              <h2 className="text-xl font-bold text-gray-900">Personalize Your Experience</h2>
-              <p className="text-sm text-gray-500 mt-1">Tell us about yourself and we'll find your perfect match.</p>
+              <h2 className="text-xl font-bold text-gray-900">Tell us about yourself</h2>
             </div>
             {onClose && (
               <button onClick={onClose} className="text-gray-400 hover:text-gray-700 text-xl font-light leading-none ml-4">✕</button>
@@ -98,22 +96,6 @@ export default function LeadForm({ onSubmit, onClose }) {
         </div>
 
         <form onSubmit={handleSubmit} className="p-6 space-y-5">
-          {/* Random shopper */}
-          <div className="flex flex-col gap-2">
-            <button
-              type="button"
-              onClick={handleFec}
-              disabled={fecLoading}
-              className="w-full border-2 border-dashed border-gray-200 rounded-xl py-2.5 text-sm font-medium text-gray-500 hover:border-gray-400 hover:text-gray-700 transition-colors disabled:opacity-50"
-            >
-              {fecLoading ? 'Loading random shopper…' : '🎲 Use a random shopper'}
-            </button>
-            {fecUsed && (
-              <p className="text-xs text-gray-400 text-center">Real people populated from previous submissions.</p>
-            )}
-            {fecError && <p className="text-xs text-red-500 text-center">{fecError}</p>}
-          </div>
-
           {/* Name */}
           <div className="grid grid-cols-2 gap-3">
             <div>
@@ -179,6 +161,22 @@ export default function LeadForm({ onSubmit, onClose }) {
                 disabled={shopperSelected}
                 onChange={e => set('zip', e.target.value)} />
             </div>
+          </div>
+
+          {/* Random shopper */}
+          <div className="flex flex-col gap-2">
+            <button
+              type="button"
+              onClick={handleFec}
+              disabled={fecLoading}
+              className="w-full border-2 border-dashed border-gray-200 rounded-xl py-2.5 text-sm font-medium text-gray-500 hover:border-gray-400 hover:text-gray-700 transition-colors disabled:opacity-50"
+            >
+              {fecLoading ? 'Loading random shopper…' : '🎲 Use a random shopper'}
+            </button>
+            {fecUsed && (
+              <p className="text-xs text-gray-400 text-center">Celebs populated with FIG data</p>
+            )}
+            {fecError && <p className="text-xs text-red-500 text-center">{fecError}</p>}
           </div>
 
           {/* Data overrides — collapsible */}

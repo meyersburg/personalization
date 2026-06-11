@@ -1,17 +1,17 @@
 export const shoppers = [
+  {"id":"bernard-sanders-1781198959311","firstName":"Bernard","lastName":"Sanders","enrichment":{"new_luxury_vehicle_purchaser_likelihood":23,"electric_vehicle_purchase_likelihood":41,"vehicle_performance_upgrade_likelihood":46,"vehicle_1_style":"Utility","vehicle_purchaser_likelihood":28}},
   {
-    id: 'jason-meyersburg',
-    firstName: 'Jason',
-    lastName: 'Meyersburg',
+    id: 'mark-cuban',
+    firstName: 'Mark',
+    lastName: 'Cuban',
     enrichment: {
-      vehicle_1_style: 'Utility',
-      vehicle_purchaser_likelihood: 57,
-      new_luxury_vehicle_purchaser_likelihood: 47,
-      electric_vehicle_purchase_likelihood: 100,
-      vehicle_performance_upgrade_likelihood: 56,
+      vehicle_1_style: 'Pickup',
+      vehicle_purchaser_likelihood: 72,
+      new_luxury_vehicle_purchaser_likelihood: 99,
+      electric_vehicle_purchase_likelihood: 68,
+      vehicle_performance_upgrade_likelihood: 52,
     },
   },
-  {"id":"bernard-sanders-1781198959311","firstName":"Bernard","lastName":"Sanders","enrichment":{"new_luxury_vehicle_purchaser_likelihood":23,"electric_vehicle_purchase_likelihood":41,"vehicle_performance_upgrade_likelihood":46,"vehicle_1_style":"Utility","vehicle_purchaser_likelihood":28}},
   {
     id: 'martha-stewart',
     firstName: 'Martha',
