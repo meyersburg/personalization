@@ -103,9 +103,9 @@ export default function CustomerPage() {
           <img src={HERO_URL} alt="Chittenden Auto Group" className="w-full h-full object-cover object-[center_75%]" />
           <div className="absolute inset-0 bg-gradient-to-r from-black/65 via-black/35 to-transparent" />
           <div className="absolute inset-0 flex flex-col justify-center px-12 max-w-2xl">
-           <h1 className="text-white text-5xl font-bold leading-tight mb-4">Find Your Perfect Drive</h1>
+           <h1 className="text-white text-7xl font-bold leading-tight mb-4">Find Your Drive</h1>
             <p className="text-white/80 text-lg mb-8">
-              Tell us a little about yourself and we'll match you with the right vehicle for your lifestyle and budget.
+              Tell us about yourself and we'll suggest the right vehicle for you.
             </p>
             <button
               onClick={() => setShowModal(true)}

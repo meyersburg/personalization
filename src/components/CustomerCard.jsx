@@ -54,6 +54,9 @@ export default function CustomerCard({ onClose }) {
             <p className="text-lg font-bold text-gray-900 mt-0.5">
               {leadData?.firstName} {leadData?.lastName}
             </p>
+            {e.vehicle_purchaser_likelihood == null && (
+              <p className="text-xs text-gray-400 mt-0.5">Identity not resolved</p>
+            )}
           </div>
           <button onClick={onClose} className="text-gray-400 hover:text-gray-700 text-lg leading-none">✕</button>
         </div>
